@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            width: 100vw;
+            height: 100vh;
+            overflow: hidden;
+            box-sizing: border-box;
+            background-color: #f3f6fb;
+        }
+
+        .wrap {
+            text-align: center;
+            padding-top: 20px;
+        }
+
+        .videoBox {
+            width: 1550px;
+            height: 780px;
+            margin: 30px auto 20px;
+            border-radius: 10px;
+            overflow: hidden;
+            background-color: #222;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .videoBox video {
+            width: 99%;
+            height: 97%;
+            object-fit: cover;
+            border-radius: 5px;
+        }
+
+        .btn {
+            display: inline-block;
+            text-decoration: none;
+            color: #fff;
+            font-weight: 500;
+            font-size: 18px;
+            padding: 12px 24px;
+            border: 0;
+            border-radius: 9999px;
+            background-color: #2563eb;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="wrap">
+        <h2>로그인 → 영화 예매 → 선택한 영화·좌석 예매 조회 시연</h2>
+        <div class="videoBox">
+            <video controls preload="metadata" autoplay muted loop aria-label="예매 기능 시연">
+                <source src="/mov/movie.mp4">
+            </video>
+        </div>
+        <a href="https://dy-08.github.io/line-cinema/" class="btn">실제 서비스 바로가기 ↗</a>
+    </div>
+</body>
+
+</html>
